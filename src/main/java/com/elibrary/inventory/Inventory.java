@@ -12,6 +12,7 @@ import com.elibrary.models.User;
 
 public class Inventory {
 	public List<Book> books = new ArrayList<>();
+	// it is advisable to use userId as key for this map
 	public Map<String, User> users;
 
 	public void addBook(Book book) throws ISBNAlreadyExistsException {
